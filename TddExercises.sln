@@ -3,15 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01-Input,Processing,andOutput", "01-Input,Processing,andOutput", "{542066C4-EC21-46D0-BB8B-4A7F7B5E432D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Input, Processing, and Output", "01 - Input, Processing, and Output", "{542066C4-EC21-46D0-BB8B-4A7F7B5E432D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01_Hello", "01_Hello", "{61EC9C1D-27F4-44A2-9296-30693FB5B1DE}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hello", "Hello", "{61EC9C1D-27F4-44A2-9296-30693FB5B1DE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hello", "Hello\Hello.csproj", "{0AE6D578-184A-4EBC-A37A-29D1425C53C4}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02_Counting_the_Number_of_Characters", "02_Counting_the_Number_of_Characters", "{55885F8F-1E65-4EDC-9767-2F750B3E9E57}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountTheNumberOFCharacters", "CountTheNumberOFCharacters\CountTheNumberOFCharacters.csproj", "{B2346822-FCBC-4AEE-B20A-6AFBEFA422F3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hello", "Hello\Hello.csproj", "{0AE6D578-184A-4EBC-A37A-29D1425C53C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +19,6 @@ Global
 		{0AE6D578-184A-4EBC-A37A-29D1425C53C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0AE6D578-184A-4EBC-A37A-29D1425C53C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0AE6D578-184A-4EBC-A37A-29D1425C53C4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B2346822-FCBC-4AEE-B20A-6AFBEFA422F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B2346822-FCBC-4AEE-B20A-6AFBEFA422F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B2346822-FCBC-4AEE-B20A-6AFBEFA422F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B2346822-FCBC-4AEE-B20A-6AFBEFA422F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -34,8 +26,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{61EC9C1D-27F4-44A2-9296-30693FB5B1DE} = {542066C4-EC21-46D0-BB8B-4A7F7B5E432D}
 		{0AE6D578-184A-4EBC-A37A-29D1425C53C4} = {61EC9C1D-27F4-44A2-9296-30693FB5B1DE}
-		{55885F8F-1E65-4EDC-9767-2F750B3E9E57} = {542066C4-EC21-46D0-BB8B-4A7F7B5E432D}
-		{B2346822-FCBC-4AEE-B20A-6AFBEFA422F3} = {55885F8F-1E65-4EDC-9767-2F750B3E9E57}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F94DA663-53D1-4278-9709-52C87F276CE5}
