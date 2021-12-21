@@ -13,6 +13,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02_Counting_the_Number_of_C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CountTheNumberOFCharacters", "CountTheNumberOFCharacters\CountTheNumberOFCharacters.csproj", "{7052FF76-0E1B-4E15-AD2E-72E39E6F34E3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03_Printing_Quote", "03_Printing_Quote", "{A63EC2C9-0054-46DE-B755-2A0F6C16BEC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrintingQuote", "PrintingQuote\PrintingQuote.csproj", "{E0EB9473-3193-4F73-9A90-8203802F0E5E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,10 @@ Global
 		{7052FF76-0E1B-4E15-AD2E-72E39E6F34E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7052FF76-0E1B-4E15-AD2E-72E39E6F34E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7052FF76-0E1B-4E15-AD2E-72E39E6F34E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0EB9473-3193-4F73-9A90-8203802F0E5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0EB9473-3193-4F73-9A90-8203802F0E5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0EB9473-3193-4F73-9A90-8203802F0E5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0EB9473-3193-4F73-9A90-8203802F0E5E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,6 +44,8 @@ Global
 		{0AE6D578-184A-4EBC-A37A-29D1425C53C4} = {61EC9C1D-27F4-44A2-9296-30693FB5B1DE}
 		{55885F8F-1E65-4EDC-9767-2F750B3E9E57} = {542066C4-EC21-46D0-BB8B-4A7F7B5E432D}
 		{7052FF76-0E1B-4E15-AD2E-72E39E6F34E3} = {55885F8F-1E65-4EDC-9767-2F750B3E9E57}
+		{A63EC2C9-0054-46DE-B755-2A0F6C16BEC8} = {542066C4-EC21-46D0-BB8B-4A7F7B5E432D}
+		{E0EB9473-3193-4F73-9A90-8203802F0E5E} = {A63EC2C9-0054-46DE-B755-2A0F6C16BEC8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F94DA663-53D1-4278-9709-52C87F276CE5}
