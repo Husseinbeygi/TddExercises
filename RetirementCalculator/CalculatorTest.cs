@@ -26,8 +26,8 @@ namespace RetirementCalculator
         }
 
         [Theory]
-        [InlineData(25, 65, 2061)]
-        [InlineData(30, 60, 2051)]
+        [InlineData(25, 65, 2062)]
+        [InlineData(30, 60, 2052)]
         [InlineData(65, 40, 0)]
         [InlineData(40, 20, 0)]
         public void WhenUserInputAgeAndRetireNumber_ThenCalculateTheYearOfRetirement(int age, int retirePlan, int expected)
