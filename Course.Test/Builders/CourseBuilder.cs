@@ -1,6 +1,7 @@
-﻿using Academy.Domain.Course;
+﻿using Academy.Domain.CourseAgg;
+using System;
 
-namespace Course_Test
+namespace Academy.Domain.Tests.Unit.Builders
 {
     public class CourseBuilder
     {
@@ -12,7 +13,7 @@ namespace Course_Test
 
         public CourseBuilder WithName(string name)
         {
-            this.name = name;   
+            this.name = name;
             return this;
         }
         public CourseBuilder WithTuition(double tuition)
@@ -27,6 +28,10 @@ namespace Course_Test
             return new Course(id, name, isOnline, tuition);
         }
 
-        
+        public CourseBuilder WithId(int id)
+        {
+            this.id = id;
+            return this;
+        }
     }
 }

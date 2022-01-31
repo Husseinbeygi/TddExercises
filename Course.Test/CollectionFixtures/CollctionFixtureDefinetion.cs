@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Xunit;
+﻿using Xunit;
 
-namespace Course_Test.CollectionFixtures
+namespace Academy.Domain.Tests.Unit.CollectionFixtures
 {
 
     [CollectionDefinition("ColFix")]

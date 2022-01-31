@@ -1,18 +1,18 @@
 ﻿using System;
 
-namespace Course_Test
+namespace Academy.Domain.Tests.Unit.ClassFixtures
 {
     public class identifierFixture : IDisposable
     {
-        public Guid guid { get; set; } 
+        public Guid guid { get; set; }
         public identifierFixture()
         {
-            guid = Guid.NewGuid();   
+            guid = Guid.NewGuid();
         }
 
         public void Dispose()
         {
-            guid = Guid.Empty;  
+            guid = Guid.Empty;
         }
     }
 }

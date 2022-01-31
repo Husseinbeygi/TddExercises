@@ -1,12 +1,12 @@
-
-using Academy.Domain.Course;
+using Academy.Domain.CourseAgg;
 using Academy.Domain.Exceptions;
-using Course_Test.CollectionFixtures;
+using Academy.Domain.Tests.Unit.Builders;
+using Academy.Domain.Tests.Unit.ClassFixtures;
+using Academy.Domain.Tests.Unit.CollectionFixtures;
 using FluentAssertions;
-using System;
 using Xunit;
 
-namespace Course_Test
+namespace Academy.Domain.Tests.Unit
 {
     [Collection("ColFix")]
     public class CourseTests : IClassFixture<identifierFixture>
@@ -35,9 +35,9 @@ namespace Course_Test
 
             course.Id.Should().Be(id);
             course.Name.Should().Be(name);
-            course.IsOnline.Should().Be(isOnline);  
+            course.IsOnline.Should().Be(isOnline);
             course.Tuition.Should().Be(tuition);
-            course.sections.Should().BeEmpty() ;  
+            course.sections.Should().BeEmpty();
         }
 
 
@@ -48,12 +48,12 @@ namespace Course_Test
 
             var g = identifierFixture.guid;
 
-            var courseBuilder = new CourseBuilder(); 
+            var courseBuilder = new CourseBuilder();
             // Act
             var course = () => courseBuilder.WithName("").Build();
 
             //Assert
-            course.Should().ThrowExactly<CourseNameIsInvalidException>(); 
+            course.Should().ThrowExactly<CourseNameIsInvalidException>();
         }
 
 
@@ -73,12 +73,12 @@ namespace Course_Test
         [Fact]
         public void ShouldAddNewSection_WhenNewSectionIsCreated()
         {
-            int id = 1; 
+            int id = 1;
             string name = "SectionTest";
 
             var courseBuilder = new CourseBuilder();
             var course = courseBuilder.Build();
-            var sectionToAdd = new Section(id,name);
+            var sectionToAdd = new Section(id, name);
 
 
             course.AddSection(sectionToAdd);

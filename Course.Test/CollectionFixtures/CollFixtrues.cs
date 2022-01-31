@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Course_Test.CollectionFixtures
+namespace Academy.Domain.Tests.Unit.CollectionFixtures
 {
     public class CollFixtrues : IDisposable
     {

@@ -1,4 +1,4 @@
-﻿namespace Academy.Domain.Course
+﻿namespace Academy.Domain.CourseAgg
 {
     public class Section
     {

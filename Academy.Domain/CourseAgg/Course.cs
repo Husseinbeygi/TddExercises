@@ -1,14 +1,14 @@
 ﻿using Academy.Domain.Exceptions;
 
-namespace Academy.Domain.Course
+namespace Academy.Domain.CourseAgg
 {
-    public  class Course
+    public class Course
     {
-        public int Id;
-        public string Name;
-        public bool IsOnline;
-        public double Tuition;
-        public List<Section> sections;
+        public int Id { get; private set; }
+        public string Name { get; private set; }
+        public bool IsOnline { get; private set; }
+        public double Tuition { get; private set; }
+        public List<Section> sections { get; private set; }
         public Course(int id, string name, bool isOnline, double tuition)
         {
             GuardForNull(name);
