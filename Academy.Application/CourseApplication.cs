@@ -4,7 +4,7 @@ using Academy.Framework;
 
 namespace Academy.Application
 {
-    public class CourseApplication
+    public class CourseApplication : ICourseApplication
     {
         private readonly ICourseRepository courseRepository;
 
@@ -27,6 +27,14 @@ namespace Academy.Application
             courseRepository.Create(course);
 
             return OperationResult.Succedded;
+        }
+
+        public int Update(EditCourse courseTest)
+        {
+            courseRepository.Remove(courseTest.Id);
+            courseRepository.Create(new Course(courseTest.Id,courseTest.Name,courseTest.IsOnline,courseTest.Tuition));
+            return OperationResult.Succedded;
+
         }
     }
 }
