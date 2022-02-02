@@ -1,14 +1,13 @@
 using Academy.Domain.Tests.Unit.Builders;
 using Academy.Infrastructre.Repository;
 using FluentAssertions;
-using System;
 using Xunit;
 
 namespace Academy.Infrastructure.Tests.Unit
 {
     public class CourseRepositoryTests
     {
-        private readonly CourseRepository _courseRepository;    
+        private readonly CourseRepository _courseRepository;
         private readonly CourseBuilder _courseBuilder;
         public CourseRepositoryTests()
         {
@@ -33,7 +32,7 @@ namespace Academy.Infrastructure.Tests.Unit
             var courses = _courseRepository.GetAll();
 
             courses.Should().HaveCountGreaterThanOrEqualTo(0);
-            
+
         }
 
         [Fact]
@@ -46,8 +45,8 @@ namespace Academy.Infrastructure.Tests.Unit
 
             var actual = _courseRepository.Getby(id);
 
-            actual.Should().BeEquivalentTo(expected);   
-            
+            actual.Should().BeEquivalentTo(expected);
+
         }
 
         [Fact]
@@ -87,7 +86,7 @@ namespace Academy.Infrastructure.Tests.Unit
             string name = "CTest";
             var expected = _courseBuilder.WithName(name).Build();
             _courseRepository.Create(expected);
-                
+
 
             var actual = _courseRepository.Getby(name);
 

@@ -1,5 +1,4 @@
 ﻿using Academy.Domain.CourseAgg;
-using System.Collections.Generic;
 
 namespace Academy.Infrastructre.Repository
 {

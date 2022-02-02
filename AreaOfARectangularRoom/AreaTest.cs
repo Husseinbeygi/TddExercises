@@ -31,7 +31,7 @@ namespace AreaOfARectangularRoom
             else
             {
                 double area = lengthinfeet * widthinfeet;
-                return Math.Round(area / 10.764,3);
+                return Math.Round(area / 10.764, 3);
             }
         }
 

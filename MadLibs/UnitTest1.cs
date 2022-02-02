@@ -1,5 +1,3 @@
-using System;
-using System.Collections.Generic;
 using Xunit;
 
 namespace MadLibs
@@ -21,7 +19,7 @@ namespace MadLibs
             string expected = "Do you walk your blue dog quickly? That's hilarious!";
 
             // Assert
-            Assert.Equal(expected, actual);     
+            Assert.Equal(expected, actual);
         }
 
         private string MakeMadlib(string noun, string verb, string adjective, string adverb)

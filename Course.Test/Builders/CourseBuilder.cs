@@ -1,5 +1,4 @@
 ﻿using Academy.Domain.CourseAgg;
-using System;
 
 namespace Academy.Domain.Tests.Unit.Builders
 {

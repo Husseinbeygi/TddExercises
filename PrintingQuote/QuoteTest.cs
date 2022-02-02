@@ -1,4 +1,3 @@
-using System;
 using Xunit;
 
 namespace PrintingQuote
@@ -17,13 +16,13 @@ namespace PrintingQuote
 
             //Assert
 
-            Assert.Equal(expected.Trim(), actual.Trim());         
+            Assert.Equal(expected.Trim(), actual.Trim());
 
         }
 
         private string GenrateQuote(string quote, string author)
         {
-            return author + " Says :" + "\"" + quote + "\"";    
+            return author + " Says :" + "\"" + quote + "\"";
         }
     }
 }

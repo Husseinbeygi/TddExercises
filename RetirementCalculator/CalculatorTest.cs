@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using Xunit;
 
 namespace RetirementCalculator
@@ -39,7 +38,7 @@ namespace RetirementCalculator
         {
             var year = DateTime.Now.Year;
             var retirePlanTime = retirePlan - age;
-            return year + retirePlanTime > year ? year + retirePlanTime : 0;   
+            return year + retirePlanTime > year ? year + retirePlanTime : 0;
         }
 
         private int CalculateRetireTime(int age, int retirePlan)

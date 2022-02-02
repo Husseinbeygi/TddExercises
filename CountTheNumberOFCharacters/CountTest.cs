@@ -4,7 +4,7 @@ namespace CountTheNumberOFCharacters
 {
     public class CountTest
     {
-        private string Name { get; set; }       
+        private string Name { get; set; }
         public CountTest()
         {
             Name = "Hussein";
@@ -16,7 +16,7 @@ namespace CountTheNumberOFCharacters
             // Act
             var IsEmptyOrNull = IsInputEmptyOrNull(Name);
             // Assert
-            Assert.False(IsEmptyOrNull);  
+            Assert.False(IsEmptyOrNull);
 
         }
 
@@ -52,20 +52,20 @@ namespace CountTheNumberOFCharacters
             if (IsInputEmptyOrNull(name))
             {
                 return 0;
-            }        
-            return name.Length;   
+            }
+            return name.Length;
         }
 
         private bool IsInputEmptyOrNull(string v)
         {
             if (string.IsNullOrWhiteSpace(v))
-                return  true;
+                return true;
 
-            return false;       
+            return false;
         }
-    
-        
-    
+
+
+
     }
 
 

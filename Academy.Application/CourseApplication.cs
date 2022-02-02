@@ -32,7 +32,7 @@ namespace Academy.Application
         public int Update(EditCourse courseTest)
         {
             courseRepository.Remove(courseTest.Id);
-            courseRepository.Create(new Course(courseTest.Id,courseTest.Name,courseTest.IsOnline,courseTest.Tuition));
+            courseRepository.Create(new Course(courseTest.Id, courseTest.Name, courseTest.IsOnline, courseTest.Tuition));
             return OperationResult.Succedded;
 
         }
